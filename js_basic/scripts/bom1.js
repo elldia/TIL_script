@@ -121,4 +121,7 @@ console.log('=========쇼핑몰 구입 알고리즘');
 //2. 개수에 따라 최종 가격 구하기
 //결과예) 구입할 물건은 ?개이고 이벤트상품 ?개가 추가됩니다. 총 결제 금액은 ?원입니다.
 let price = 15700;
-const productQa = prompt('구입할 개수를 입력하세요');
+const productQa = Number(prompt('구입할 개수를 입력하세요'));
+const eventNum = productQa; //이벤트 증정 개수
+const total = price*productQa; //최종 결제 가격
+console.log(`구입할 물건은 ${productQa}개이고 이벤트상품은 ${eventNum}개가 추가됩니다. 총 결제 금액은 ${total}원입니다.`);
