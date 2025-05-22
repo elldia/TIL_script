@@ -140,8 +140,10 @@ function numPlus(){
     //수량이 1씩 증가해야 한다
     //Hint : 기존 input 값이 항상 1증가해야한다 
     //1. 증감연산자 활용법
-    return numInput.value = ++numInput.value;
+    numInput.value = ++numInput.value;
     //2. 더하기연산자와 형변환메서드 활용법
     //console.log(typeof numInput.value)
     //return numInput.value = Number(numInput.value)+1;
+    numBtn.removeEventListener('click',numPlus);
+    return;
 }
