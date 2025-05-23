@@ -25,3 +25,6 @@ main #result_btn {
     color:#ff2f00;
     background:#fff;
 }
+main #result {}
+/* 자바스크립트에서 동적으로 생성한 HTML 꾸미기 속성 */
+main #result em {color:#f00;}
