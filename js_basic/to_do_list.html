@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 할일</title>
+    <link rel="stylesheet" href="../js_level2_ohou/styles/reset.css">
+    <style>
+        main {
+            width:420px; height:800px; 
+            background:#eee; border-radius:5px; margin:30px auto;
+            padding:15px 20px;
+        }
+        main h1 {font-size:1.2rem; font-weight:600; margin:0 0 30px;}
+        main ul {background:#fff; height:90%; overflow-y:auto;}
+        main ul li {border-bottom:1px solid #bbb; padding:6px 4px; display:flex; justify-content: space-between; align-items: center;}
+        main ul li span {}
+        main ul li .del_btn {background:#fff; padding:4px; font-size:0.75rem;}
+        main .input_btn {display:flex; justify-content: space-between; align-items: center;}
+        main .input_btn .to::placeholder {color:#eee;}
+        main .input_btn .to {height:32px; width:calc(100% - 60px); background:#0d7ae0; padding:4px; color:#fff;}
+        main .input_btn #to_btn {background:#222; color:#fff; height:32px; width:60px;}
+    </style>
+    <script src="./scripts/to_do_list.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>오늘의 할일</h1>
+        <ul>
+            <li><span>여기에 할 일이 등록됩니다.</span><button type="button" class="del_btn">X</button></li>
+            
+        </ul>
+        <div class="input_btn">
+            <input type="text" class="to" name="to" placeholder="할일을 입력하세요">
+            <button type="button" id="to_btn">등록</button>
+        </div>
+    </main>
+</body>
+</html>
