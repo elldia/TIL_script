@@ -12,6 +12,7 @@ const kurlyDB = [
         name:'[피자로빈슨] 뉴욕 메가 슬라이스 피자 페퍼로니',
         summary:'짭쪼름한 페퍼로니가 듬뿍',
         price:5500,
+        
         sale:20,
         review:18,
     },{
